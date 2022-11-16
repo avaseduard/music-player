@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jukebox.ed</title>
+    <link rel="icon" type="image/png" href="ed-dev-favicon-2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Player container -->
+    <div class="jukebox-container">
+      <!-- Image container -->
+      <div class="image-container">
+        <!-- Image -->
+        <img src="img/armin-van-buuren.jpeg" alt="Album" />
+      </div>
+      <!-- Song title -->
+      <h2 id="title">In and out of love</h2>
+      <!-- Song artist -->
+      <h3 id="artist">Armin van Buuren</h3>
+      <!-- Audio controls -->
+      <audio src="music/armin-van-buuren-in-and-out-of-love.mp3"></audio>
+      <!-- Progress container -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="duration-container">
+          <span class="current-duration">0:00</span>
+          <span class="total-duration">3.08</span>
+        </div>
+      </div>
+      <!-- Track controls -->
+      <div class="track-controls">
+        <i class="fa-solid fa-backward-fast" id="previous" title="Previous"></i>
+        <i class="fa-solid fa-play main-button" id="play" title="Play"></i>
+        <i class="fa-solid fa-forward-fast" id="next" title="Next"></i>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
